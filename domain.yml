@@ -1,0 +1,39 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - gratitude
+  - describe_symptoms
+
+entities:
+  - symptom
+
+slots:
+  symptom:
+    type: list
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_iamabot
+  - utter_no_problem
+  - action_diagnose_symptoms
+
+templates:
+  utter_greet:
+  - text: "Hello, I am a symptom diagnosis bot. What are your symptoms?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_no_problem:
+  - text: "No problem!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
