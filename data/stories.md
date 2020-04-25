@@ -10,7 +10,7 @@
 * gratitude
   - utter_no_problem
 
-## get_diagnosis_1
+## get_diagnosis
 * greet
   - utter_greet
 * describe_symptoms
