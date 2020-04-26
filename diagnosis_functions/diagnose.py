@@ -26,7 +26,7 @@ def encode_symptom(symptom):
     Convert symptom string to vector using spacy
 
     :param symptom:
-    :return: 246-D vector
+    :return: 256-D vector
     '''
 
     logging.info(f"Encoding symptom {symptom}")
@@ -44,7 +44,7 @@ def create_illness_vector(encoded_symptoms):
     :return: A single vector flagging each symptoms appearence in the user message (based on vector similarity)
     '''
 
-    threshold = 0.9
+    threshold = 0.85
     symptoms_df['symptom_flagged'] = 0
 
     for encoded_symptom in encoded_symptoms:
