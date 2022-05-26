@@ -144,7 +144,7 @@ twilio==6.26.3
 typeguard==2.7.1
 typing-extensions==3.7.4.2
 tzlocal==2.0.0
-ujson==1.35
+ujson==5.2.0
 urllib3==1.25.8
 uvloop==0.14.0
 wasabi==0.6.0
